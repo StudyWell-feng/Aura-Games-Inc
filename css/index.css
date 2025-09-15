@@ -1,0 +1,290 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+    background: #FFF;
+}
+
+body {
+    font-family: "Open+Sans", sans-serif;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*navbar start*/
+.navbar-header {
+    min-height: 100px;
+}
+
+.navbar {
+    background-color: #167514 !important;
+    /*border-color: #ffffff !important;*/
+}
+
+.navbar .navbar-brand {
+    position: relative;
+    min-height: 100px;
+
+    background-image: url("../apple-icon-180x180.png");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+
+    padding-left: 90px;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-brand {
+        margin-left: 15px;
+    }
+}
+
+.navbar-brand > img {
+    display: block;
+    vertical-align: middle;
+    height: 74px;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav {
+    padding-top: 30px;
+}
+
+.navbar-nav > li > a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fff !important;
+    /*margin-left: 20px;*/
+}
+.navbar-nav > li > a:hover {
+    color: #f9b64a !important;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar .navbar-toggle {
+    border-color: #ffffff !important;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+/*navbar end*/
+
+/*title-bg start*/
+.head-title-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.title-bg {
+    min-height: 400px;
+    background-size: cover;
+    padding-top: 100px;
+    /*background: skyblue;*/
+}
+
+.head-title-box h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: #444444;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-box {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.btn-box img {
+    display: inline-block;
+    /*width: 245px;*/
+    height: 66px;
+    margin: 10px;
+}
+
+/*title-bg end*/
+
+/*bg-box begin*/
+.bg-box {
+    width: 100%;
+    background: #010C2D;
+    /*background: #121947;*/
+    padding-bottom: 60px;
+}
+
+.features-item {
+    margin-top: 90px;
+}
+
+.features-top {
+    margin-top: 90px;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.features-title {
+    font-size: 50px;
+    color: gold;
+    /*color: #00C4FF;*/
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.features-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 30px 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .head-title-box h1 {
+        font-size: 36px;
+    }
+
+    .features-top, .features-subtitle {
+        font-size: 32px;
+    }
+
+    .features-title {
+        font-size: 36px;
+    }
+
+    .features-item {
+        margin-top: 30px;
+    }
+}
+
+/*bg-box end*/
+
+/*descPage start*/
+#descPage {
+    width: 100%;
+    background: #FAFAFA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#descPage p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#descPage li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*descPage end*/
+
+/*footer start*/
+ .footer {
+      background: #ffffff;   /* 底部背景色，可改 */
+      padding: 20px 0;
+    }
+
+    .footer .row {
+      display: flex;         /* 启用 Flex 布局 */
+      gap: 20px;             /* 三列之间的间距 */
+      max-width: 1200px;     /* 限制最大宽度，居中 */
+      margin: 0 auto;
+    }
+
+    .footer .row > div {
+      flex: 1;               /* 每列等宽 */
+      box-sizing: border-box;
+    }
+
+    .footer-item h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-item a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer-item a:hover {
+      text-decoration: underline;
+    }
+.footer {
+    padding-top: 50px;
+}
+
+.footer-item {
+    flex: 1;
+    display: inline-block;
+    padding-left:30%;
+    margin-top: 10px;
+}
+
+.footer-item h4 {
+    height: 27px;
+    line-height: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.footer-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
+    line-height: 32px;
+}
+
+.footer-item a {
+    color: #000000;
+    /*text-decoration: none;*/
+}
+
+.footer .copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+    padding: 30px
+}
+
+/*footer end*/
+
+i {
+    word-break: break-all !important;
+}
